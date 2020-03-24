@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="270.0" prefWidth="703.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <ImageView fitHeight="270.0" fitWidth="703.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../login1.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnSignUp" layoutX="152.0" layoutY="166.0" mnemonicParsing="false" text="Sign up">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnExit" layoutX="616.0" layoutY="218.0" mnemonicParsing="false" text="Exit">
+         <effect>
+            <DropShadow color="#00000085" height="20.0" offsetX="1.0" offsetY="1.0" radius="9.5" spread="0.1" width="20.0" />
+         </effect>
+         <opaqueInsets>
+            <Insets left="7.0" />
+         </opaqueInsets>
+      </Button>
+      <Button fx:id="btnLogin" layoutX="549.0" layoutY="218.0" mnemonicParsing="false" text="Login">
+         <effect>
+            <DropShadow color="#00000084" height="20.0" offsetX="1.0" offsetY="1.0" radius="9.5" spread="0.1" width="20.0" />
+         </effect>
+         <opaqueInsets>
+            <Insets left="7.0" />
+         </opaqueInsets>
+      </Button>
+      <PasswordField fx:id="txtPassword" layoutX="69.0" layoutY="121.0" prefHeight="29.0" prefWidth="143.0" promptText="Password" />
+      <TextField fx:id="txtId" layoutX="69.0" layoutY="82.0" prefHeight="29.0" prefWidth="143.0" promptText="ID" />
+      <Label layoutX="488.0" layoutY="33.0" text="MK's Estimate Pro.">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

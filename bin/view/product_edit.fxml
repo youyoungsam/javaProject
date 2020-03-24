@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="273.0" prefWidth="796.0" style="-fx-background-color: E8F5FF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="287.0" layoutY="31.0" text="제품명   :" />
+      <TextField id="textFieldProductName" layoutX="365.0" layoutY="26.0" prefHeight="29.0" prefWidth="285.0" />
+      <TextField id="textFieldItemName" layoutX="365.0" layoutY="69.0" prefHeight="29.0" prefWidth="188.0" />
+      <Label layoutX="287.0" layoutY="73.0" text="품목      :" />
+      <Label layoutX="287.0" layoutY="113.0" prefHeight="19.0" prefWidth="65.0" text="정보      :" />
+      <TextArea id="textAreaInformation" layoutX="365.0" layoutY="113.0" prefHeight="93.0" prefWidth="329.0" />
+      <Button id="buttonEdit" layoutX="648.0" layoutY="222.0" mnemonicParsing="false" text="수정" />
+      <Button id="buttonExit" layoutX="703.0" layoutY="222.0" mnemonicParsing="false" text="나가기" />
+      <ImageView id="imageViewProduct" fitHeight="170.0" fitWidth="170.0" layoutX="54.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow color="#4fc1ff" height="115.0" radius="57.0" width="115.0" />
+         </effect>
+      </ImageView>
+      <Button id="btnImageChange" layoutX="89.0" layoutY="220.0" mnemonicParsing="false" text="이미지 변경" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="295.0" prefWidth="600.0" style="-fx-background-color: E8F5FF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="325.0" layoutY="184.0" text="SSD  : " />
+      <ComboBox id="editComboBox8" layoutX="407.0" layoutY="179.0" prefHeight="29.0" prefWidth="131.0" promptText="선택하세요" />
+      <ComboBox id="editComboBox7" layoutX="407.0" layoutY="127.0" prefHeight="29.0" prefWidth="131.0" promptText="선택하세요" />
+      <ComboBox id="editComboBox6" layoutX="408.0" layoutY="79.0" prefHeight="29.0" prefWidth="131.0" promptText="선택하세요" />
+      <ComboBox id="editComboBox5" layoutX="407.0" layoutY="31.0" prefHeight="29.0" prefWidth="131.0" promptText="선택하세요" />
+      <ComboBox id="editComboBox4" layoutX="140.0" layoutY="179.0" prefHeight="29.0" prefWidth="131.0" promptText="선택하세요" />
+      <ComboBox id="editComboBox3" layoutX="140.0" layoutY="127.0" prefHeight="29.0" prefWidth="131.0" promptText="선택하세요" />
+      <ComboBox id="editComboBox2" layoutX="140.0" layoutY="79.0" prefHeight="29.0" prefWidth="131.0" promptText="선택하세요" />
+      <ComboBox id="editComboBox1" layoutX="140.0" layoutY="31.0" prefHeight="29.0" prefWidth="131.0" promptText="선택하세요" />
+      <Label layoutX="323.0" layoutY="84.0" text="VGA  : " />
+      <Label layoutX="324.0" layoutY="36.0" text="CPU  : " />
+      <Label layoutX="320.0" layoutY="133.0" text="HDD  : " />
+      <Label layoutX="55.0" layoutY="181.0" text="RAM  : " />
+      <Label layoutX="64.0" layoutY="132.0" text="파워 : " />
+      <Label layoutX="35.0" layoutY="84.0" text="메인보드 : " />
+      <Label layoutX="51.0" layoutY="36.0" text="케이스 : " />
+      <Button id="editBtnSave" layoutX="243.0" layoutY="238.0" mnemonicParsing="false" text="저장">
+         <effect>
+            <DropShadow color="#00000084" height="20.0" offsetX="1.0" offsetY="1.0" radius="9.5" spread="0.1" width="20.0" />
+         </effect>
+         <opaqueInsets>
+            <Insets left="7.0" />
+         </opaqueInsets>
+      </Button>
+      <Button id="editBtnCancel" layoutX="314.0" layoutY="238.0" mnemonicParsing="false" text="취소">
+         <effect>
+            <DropShadow color="#00000085" height="20.0" offsetX="1.0" offsetY="1.0" radius="9.5" spread="0.1" width="20.0" />
+         </effect>
+         <opaqueInsets>
+            <Insets left="7.0" />
+         </opaqueInsets>
+      </Button>
+   </children>
+</AnchorPane>

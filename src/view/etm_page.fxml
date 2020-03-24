@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="846.0" prefWidth="1000.0" style="-fx-background-color: #E8F5FF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EtmController">
+   <children>
+      <ImageView fx:id="imgCheck" fitHeight="242.0" fitWidth="242.0" layoutX="374.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../projectImage/icon/basic.png" />
+         </image>
+         <effect>
+            <DropShadow color="#4fc1ff" height="115.0" radius="57.0" width="115.0" />
+         </effect>
+      </ImageView>
+      <Label layoutX="53.0" layoutY="82.0" text="케이스 : " />
+      <Label layoutX="37.0" layoutY="160.0" text="메인보드 : " />
+      <Label layoutX="66.0" layoutY="238.0" text="파워 : " />
+      <Label layoutX="57.0" layoutY="317.0" text="RAM  : " />
+      <Label layoutX="680.0" layoutY="241.0" text="HDD  : " />
+      <Label layoutX="686.0" layoutY="82.0" text="CPU  : " />
+      <Label layoutX="684.0" layoutY="160.0" text="VGA  : " />
+      <ComboBox fx:id="comboBox1" layoutX="142.0" layoutY="77.0" prefHeight="29.0" prefWidth="157.0" promptText="선택하세요" />
+      <ComboBox fx:id="comboBox2" layoutX="142.0" layoutY="155.0" prefHeight="29.0" prefWidth="157.0" promptText="선택하세요" />
+      <ComboBox fx:id="comboBox3" layoutX="142.0" layoutY="233.0" prefHeight="29.0" prefWidth="157.0" promptText="선택하세요" />
+      <ComboBox fx:id="comboBox4" layoutX="142.0" layoutY="315.0" prefHeight="29.0" prefWidth="157.0" promptText="선택하세요" />
+      <ComboBox fx:id="comboBox5" layoutX="768.0" layoutY="77.0" prefHeight="29.0" prefWidth="157.0" promptText="선택하세요" />
+      <ComboBox fx:id="comboBox6" layoutX="768.0" layoutY="155.0" prefHeight="29.0" prefWidth="157.0" promptText="선택하세요" />
+      <ComboBox fx:id="comboBox7" layoutX="768.0" layoutY="236.0" prefHeight="29.0" prefWidth="157.0" promptText="선택하세요" />
+      <ComboBox fx:id="comboBox8" layoutX="769.0" layoutY="318.0" prefHeight="29.0" prefWidth="157.0" promptText="선택하세요" />
+      <Label layoutX="686.0" layoutY="323.0" text="SSD  : " />
+      <Button id="btnExit" fx:id="btnExit" layoutX="808.0" layoutY="769.0" mnemonicParsing="false" text="나가기" />
+      <Label fx:id="lblStruct" layoutX="341.0" layoutY="31.0" text="[ Model View ]" />
+      <TableView fx:id="tableView" layoutX="47.0" layoutY="426.0" prefHeight="373.0" prefWidth="555.0" />
+      <Label layoutX="47.0" layoutY="390.0" text="[ 견적 선택 목록 ]" />
+      <Button fx:id="btnChase" layoutX="744.0" layoutY="769.0" mnemonicParsing="false" text="구매" />
+      <ImageView fx:id="imgCompati" fitHeight="220.0" fitWidth="220.0" layoutX="696.0" layoutY="433.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../projectImage/icon/pmtmain.png" />
+         </image>
+         <effect>
+            <DropShadow color="#4fc1ff" height="115.0" radius="57.0" width="115.0" />
+         </effect></ImageView>
+      <Label layoutX="774.0" layoutY="670.0" text="[ 호환성  ]" />
+      <Button fx:id="btnPmt" layoutX="744.0" layoutY="725.0" mnemonicParsing="false" text="호환성 상세정보" />
+   </children>
+</AnchorPane>

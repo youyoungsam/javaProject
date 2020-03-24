@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: E8F5FF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.manageReviewController">
+   <children>
+      <TabPane layoutX="-1.0" prefHeight="600.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="tabCase" text="케이스">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane layoutX="278.0" layoutY="76.0" prefHeight="316.0" prefWidth="647.0">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="458.0" prefWidth="620.0">
+                                 <children>
+                                    <TextArea fx:id="caseTxt1" layoutX="101.0" layoutY="14.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="caseTxt2" layoutX="101.0" layoutY="100.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="caseTxt3" layoutX="101.0" layoutY="186.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="caseTxt4" layoutX="101.0" layoutY="270.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="caseTxt5" layoutX="101.0" layoutY="353.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextField fx:id="caseId1" layoutX="6.0" layoutY="17.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="caseId2" layoutX="6.0" layoutY="103.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="caseId3" layoutX="6.0" layoutY="192.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="caseId4" layoutX="6.0" layoutY="273.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="caseId5" layoutX="6.0" layoutY="350.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <RadioButton fx:id="caseRdo1" layoutX="22.0" layoutY="52.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="67.0" text="삭제" />
+                                    <RadioButton fx:id="caseRdo2" layoutX="23.0" layoutY="139.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="67.0" text="삭제" />
+                                    <RadioButton fx:id="caseRdo3" layoutX="22.0" layoutY="229.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="67.0" text="삭제" />
+                                    <RadioButton fx:id="caseRdo4" layoutX="21.0" layoutY="309.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="67.0" text="삭제" />
+                                    <RadioButton fx:id="caseRdo5" layoutX="20.0" layoutY="387.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="67.0" text="삭제" textOverrun="CLIP" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </ScrollPane>
+                        <ComboBox fx:id="caseComboBox" layoutX="80.0" layoutY="342.0" prefHeight="29.0" prefWidth="176.0" promptText="선택하세요" />
+                        <Button fx:id="caseDelete" layoutX="815.0" layoutY="504.0" mnemonicParsing="false" text="삭제" />
+                        <Button fx:id="caseExit" layoutX="870.0" layoutY="504.0" mnemonicParsing="false" text="나가기" />
+                        <Button fx:id="caseSelect" layoutX="860.0" layoutY="427.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="71.0" text="등록" />
+                        <TextField fx:id="caseMyId" layoutX="221.0" layoutY="444.0" prefHeight="29.0" prefWidth="95.0" />
+                        <ImageView fx:id="caseImage" fitHeight="212.0" fitWidth="231.0" layoutX="25.0" layoutY="114.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../../projectImage/icon/basic.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="caseLbl" layoutX="65.0" layoutY="42.0" text="Case Best Comment" />
+                        <TextField fx:id="caseMyTxt" layoutX="328.0" layoutY="426.0" prefHeight="63.0" prefWidth="518.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="tabMb" text="메인보드">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane layoutX="278.0" layoutY="76.0" prefHeight="316.0" prefWidth="647.0">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="458.0" prefWidth="620.0">
+                                 <children>
+                                    <TextArea fx:id="mbTxt1" layoutX="101.0" layoutY="14.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="mbTxt2" layoutX="101.0" layoutY="100.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="mbTxt3" layoutX="101.0" layoutY="186.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="mbTxt4" layoutX="101.0" layoutY="270.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="mbTxt5" layoutX="101.0" layoutY="353.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextField fx:id="mbId1" layoutX="6.0" layoutY="17.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="mbId2" layoutX="6.0" layoutY="103.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="mbId3" layoutX="6.0" layoutY="192.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="mbId4" layoutX="6.0" layoutY="273.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="mbId5" layoutX="6.0" layoutY="350.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <RadioButton fx:id="mbRdo1" layoutX="22.0" layoutY="52.0" mnemonicParsing="false" text="삭제" />
+                                    <RadioButton fx:id="mbRdo2" layoutX="23.0" layoutY="139.0" mnemonicParsing="false" text="삭제" />
+                                    <RadioButton fx:id="mbRdo3" layoutX="22.0" layoutY="229.0" mnemonicParsing="false" text="삭제" />
+                                    <RadioButton fx:id="mbRdo4" layoutX="22.0" layoutY="309.0" mnemonicParsing="false" text="삭제" />
+                                    <RadioButton fx:id="mbRdo5" layoutX="23.0" layoutY="385.0" mnemonicParsing="false" text="삭제" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ComboBox fx:id="mbComboBox" layoutX="80.0" layoutY="342.0" prefHeight="29.0" prefWidth="176.0" promptText="선택하세요" />
+                        <Button fx:id="mbDelete" layoutX="815.0" layoutY="504.0" mnemonicParsing="false" text="삭제" />
+                        <Button fx:id="mbExit" layoutX="870.0" layoutY="504.0" mnemonicParsing="false" text="나가기" />
+                        <Button fx:id="mbSelect" layoutX="860.0" layoutY="427.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="71.0" text="등록" />
+                        <TextField fx:id="mbMyId" layoutX="221.0" layoutY="444.0" prefHeight="29.0" prefWidth="95.0" />
+                        <ImageView fx:id="mbImage" fitHeight="212.0" fitWidth="231.0" layoutX="25.0" layoutY="114.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../../projectImage/icon/basic.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="mbLbl" layoutX="65.0" layoutY="42.0" text="MainBoard Best Comment" />
+                        <TextField fx:id="mbMyTxt" layoutX="328.0" layoutY="426.0" prefHeight="63.0" prefWidth="518.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tabPw" text="파워">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane layoutX="278.0" layoutY="76.0" prefHeight="316.0" prefWidth="647.0">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="458.0" prefWidth="620.0">
+                                 <children>
+                                    <TextArea fx:id="pwTxt1" layoutX="101.0" layoutY="14.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="pwTxt2" layoutX="101.0" layoutY="100.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="pwTxt3" layoutX="101.0" layoutY="186.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="pwTxt4" layoutX="101.0" layoutY="270.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="pwTxt5" layoutX="101.0" layoutY="353.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextField fx:id="pwId1" layoutX="6.0" layoutY="17.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="pwId2" layoutX="6.0" layoutY="103.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="pwId3" layoutX="6.0" layoutY="192.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="pwId4" layoutX="6.0" layoutY="273.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="pwId5" layoutX="6.0" layoutY="350.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <RadioButton fx:id="pwRdo5" layoutX="22.0" layoutY="387.0" mnemonicParsing="false" text="삭제" />
+                                    <RadioButton fx:id="pwRdo1" layoutX="22.0" layoutY="52.0" mnemonicParsing="false" text="삭제" />
+                                    <RadioButton fx:id="pwRdo2" layoutX="23.0" layoutY="139.0" mnemonicParsing="false" text="삭제" />
+                                    <RadioButton fx:id="pwRdo3" layoutX="22.0" layoutY="229.0" mnemonicParsing="false" text="삭제" />
+                                    <RadioButton fx:id="pwRdo4" layoutX="22.0" layoutY="309.0" mnemonicParsing="false" text="삭제" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ComboBox fx:id="pwComboBox" layoutX="80.0" layoutY="342.0" prefHeight="29.0" prefWidth="176.0" promptText="선택하세요" />
+                        <Button fx:id="pwDelete" layoutX="815.0" layoutY="504.0" mnemonicParsing="false" text="삭제" />
+                        <Button fx:id="pwExit" layoutX="870.0" layoutY="504.0" mnemonicParsing="false" text="나가기" />
+                        <Button fx:id="pwSelect" layoutX="860.0" layoutY="427.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="71.0" text="등록" />
+                        <TextField fx:id="pwMyId" layoutX="221.0" layoutY="444.0" prefHeight="29.0" prefWidth="95.0" />
+                        <ImageView fx:id="pwImage" fitHeight="212.0" fitWidth="231.0" layoutX="25.0" layoutY="114.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../../projectImage/icon/basic.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="pwLbl" layoutX="65.0" layoutY="42.0" text="PW Best Comment" />
+                        <TextField fx:id="pwMyTxt" layoutX="328.0" layoutY="426.0" prefHeight="63.0" prefWidth="518.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tabRam" text="RAM">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane layoutX="278.0" layoutY="76.0" prefHeight="316.0" prefWidth="647.0">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="458.0" prefWidth="620.0">
+                                 <children>
+                                    <TextArea fx:id="ramTxt1" layoutX="101.0" layoutY="14.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="ramTxt2" layoutX="101.0" layoutY="100.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="ramTxt3" layoutX="101.0" layoutY="186.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="ramTxt4" layoutX="101.0" layoutY="270.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="ramTxt5" layoutX="101.0" layoutY="353.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextField fx:id="ramId1" layoutX="6.0" layoutY="17.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="ramId2" layoutX="6.0" layoutY="103.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="ramId3" layoutX="6.0" layoutY="192.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="ramId4" layoutX="6.0" layoutY="273.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="ramId5" layoutX="6.0" layoutY="350.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <RadioButton fx:id="ramRdo1" layoutX="22.0" layoutY="52.0" mnemonicParsing="false" text="삭제" />
+                                    <RadioButton fx:id="ramRdo2" layoutX="23.0" layoutY="139.0" mnemonicParsing="false" text="삭제" />
+                                    <RadioButton fx:id="ramRdo3" layoutX="22.0" layoutY="229.0" mnemonicParsing="false" text="삭제" />
+                                    <RadioButton fx:id="ramRdo4" layoutX="22.0" layoutY="309.0" mnemonicParsing="false" text="삭제" />
+                                    <RadioButton fx:id="ramRdo5" layoutX="21.0" layoutY="389.0" mnemonicParsing="false" text="삭제" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ComboBox fx:id="ramComboBox" layoutX="80.0" layoutY="342.0" prefHeight="29.0" prefWidth="176.0" promptText="선택하세요" />
+                        <Button fx:id="ramDelete" layoutX="815.0" layoutY="504.0" mnemonicParsing="false" text="삭제" />
+                        <Button fx:id="ramExit" layoutX="870.0" layoutY="504.0" mnemonicParsing="false" text="나가기" />
+                        <Button fx:id="ramSelect" layoutX="860.0" layoutY="427.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="71.0" text="등록" />
+                        <TextField fx:id="ramMyId" layoutX="221.0" layoutY="444.0" prefHeight="29.0" prefWidth="95.0" />
+                        <ImageView fx:id="ramImage" fitHeight="212.0" fitWidth="231.0" layoutX="25.0" layoutY="114.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../../projectImage/icon/basic.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="ramLbl" layoutX="65.0" layoutY="42.0" text="RAM Best Comment" />
+                        <TextField fx:id="ramMyTxt" layoutX="328.0" layoutY="426.0" prefHeight="63.0" prefWidth="518.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tabCpu" text="CPU">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane layoutX="278.0" layoutY="76.0" prefHeight="316.0" prefWidth="647.0">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="458.0" prefWidth="620.0">
+                                 <children>
+                                    <TextArea fx:id="cpuTxt1" layoutX="101.0" layoutY="14.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="cpuTxt2" layoutX="101.0" layoutY="100.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="cpuTxt3" layoutX="101.0" layoutY="186.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="cpuTxt4" layoutX="101.0" layoutY="270.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="cpuTxt5" layoutX="101.0" layoutY="353.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextField fx:id="cpuId1" layoutX="6.0" layoutY="17.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="cpuId2" layoutX="6.0" layoutY="103.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="cpuId3" layoutX="6.0" layoutY="192.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="cpuId4" layoutX="6.0" layoutY="273.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="cpuId5" layoutX="6.0" layoutY="350.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <RadioButton fx:id="cpuRdo1" layoutX="22.0" layoutY="52.0" mnemonicParsing="false" text="삭제" />
+                                    <RadioButton fx:id="cpuRdo2" layoutX="23.0" layoutY="139.0" mnemonicParsing="false" text="삭제" />
+                                    <RadioButton fx:id="cpuRdo3" layoutX="22.0" layoutY="229.0" mnemonicParsing="false" text="삭제" />
+                                    <RadioButton fx:id="cpuRdo4" layoutX="23.0" layoutY="309.0" mnemonicParsing="false" text="삭제" />
+                                    <RadioButton fx:id="cpuRdo5" layoutX="21.0" layoutY="388.0" mnemonicParsing="false" text="삭제" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ComboBox fx:id="cpuComboBox" layoutX="80.0" layoutY="342.0" prefHeight="29.0" prefWidth="176.0" promptText="선택하세요" />
+                        <Button fx:id="cpuDelete" layoutX="815.0" layoutY="504.0" mnemonicParsing="false" text="삭제" />
+                        <Button fx:id="cpuExit" layoutX="870.0" layoutY="504.0" mnemonicParsing="false" text="나가기" />
+                        <Button fx:id="cpuSelect" layoutX="860.0" layoutY="427.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="71.0" text="등록" />
+                        <TextField fx:id="cpuMyId" layoutX="221.0" layoutY="444.0" prefHeight="29.0" prefWidth="95.0" />
+                        <ImageView fx:id="cpuImage" fitHeight="212.0" fitWidth="231.0" layoutX="25.0" layoutY="114.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../../projectImage/icon/basic.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="cpuLbl" layoutX="65.0" layoutY="42.0" text="CPU Best Comment" />
+                        <TextField fx:id="cpuMyTxt" layoutX="328.0" layoutY="426.0" prefHeight="63.0" prefWidth="518.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tabVga" text="VGA">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane layoutX="278.0" layoutY="76.0" prefHeight="316.0" prefWidth="647.0">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="458.0" prefWidth="620.0">
+                                 <children>
+                                    <TextArea fx:id="vgaTxt1" layoutX="101.0" layoutY="14.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="vgaTxt2" layoutX="101.0" layoutY="100.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="vgaTxt3" layoutX="101.0" layoutY="186.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="vgaTxt4" layoutX="101.0" layoutY="270.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="vgaTxt5" layoutX="101.0" layoutY="353.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextField fx:id="vgaId1" layoutX="6.0" layoutY="17.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="vgaId2" layoutX="6.0" layoutY="103.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="vgaId3" layoutX="6.0" layoutY="192.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="vgaId4" layoutX="6.0" layoutY="273.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="vgaId5" layoutX="6.0" layoutY="350.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <RadioButton fx:id="vgaRdo1" layoutX="22.0" layoutY="52.0" mnemonicParsing="false" text="삭제" />
+                                    <RadioButton fx:id="vgaRdo2" layoutX="23.0" layoutY="139.0" mnemonicParsing="false" text="삭제" />
+                                    <RadioButton fx:id="vgaRdo3" layoutX="22.0" layoutY="229.0" mnemonicParsing="false" text="삭제" />
+                                    <RadioButton fx:id="vgaRdo4" layoutX="23.0" layoutY="309.0" mnemonicParsing="false" text="삭제" />
+                                    <RadioButton fx:id="vgaRdo5" layoutX="22.0" layoutY="390.0" mnemonicParsing="false" text="삭제" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ComboBox fx:id="vgaComboBox" layoutX="80.0" layoutY="342.0" prefHeight="29.0" prefWidth="176.0" promptText="선택하세요" />
+                        <Button fx:id="vgaDelete" layoutX="815.0" layoutY="504.0" mnemonicParsing="false" text="삭제" />
+                        <Button fx:id="vgaExit" layoutX="870.0" layoutY="504.0" mnemonicParsing="false" text="나가기" />
+                        <Button fx:id="vgaSelect" layoutX="860.0" layoutY="427.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="71.0" text="등록" />
+                        <TextField fx:id="vgaMyId" layoutX="221.0" layoutY="444.0" prefHeight="29.0" prefWidth="95.0" />
+                        <ImageView fx:id="vgaImage" fitHeight="212.0" fitWidth="231.0" layoutX="25.0" layoutY="114.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../../projectImage/icon/basic.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="vgaLbl" layoutX="65.0" layoutY="42.0" text="VGA Best Comment" />
+                        <TextField fx:id="vgaMyTxt" layoutX="328.0" layoutY="426.0" prefHeight="63.0" prefWidth="518.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tabHdd" text="HDD">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane layoutX="278.0" layoutY="76.0" prefHeight="316.0" prefWidth="647.0">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="458.0" prefWidth="620.0">
+                                 <children>
+                                    <TextArea fx:id="hddTxt1" layoutX="101.0" layoutY="14.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="hddTxt2" layoutX="101.0" layoutY="100.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="hddTxt3" layoutX="101.0" layoutY="186.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="hddTxt4" layoutX="101.0" layoutY="270.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="hddTxt5" layoutX="101.0" layoutY="353.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextField fx:id="hddId1" layoutX="6.0" layoutY="17.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="hddId2" layoutX="6.0" layoutY="103.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="hddId3" layoutX="6.0" layoutY="192.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="hddId4" layoutX="6.0" layoutY="273.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="hddId5" layoutX="6.0" layoutY="350.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <RadioButton fx:id="hddRdo1" layoutX="22.0" layoutY="52.0" mnemonicParsing="false" text="삭제" />
+                                    <RadioButton fx:id="hddRdo2" layoutX="23.0" layoutY="139.0" mnemonicParsing="false" text="삭제" />
+                                    <RadioButton fx:id="hddRdo3" layoutX="22.0" layoutY="229.0" mnemonicParsing="false" text="삭제" />
+                                    <RadioButton fx:id="hddRdo4" layoutX="23.0" layoutY="309.0" mnemonicParsing="false" text="삭제" />
+                                    <RadioButton fx:id="hddRdo5" layoutX="22.0" layoutY="390.0" mnemonicParsing="false" text="삭제" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ComboBox fx:id="hddComboBox" layoutX="80.0" layoutY="342.0" prefHeight="29.0" prefWidth="176.0" promptText="선택하세요" />
+                        <Button fx:id="hddDelete" layoutX="815.0" layoutY="504.0" mnemonicParsing="false" text="삭제" />
+                        <Button fx:id="hddExit" layoutX="870.0" layoutY="504.0" mnemonicParsing="false" text="나가기" />
+                        <Button fx:id="hddSelect" layoutX="860.0" layoutY="427.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="71.0" text="등록" />
+                        <TextField fx:id="hddMyId" layoutX="221.0" layoutY="444.0" prefHeight="29.0" prefWidth="95.0" />
+                        <ImageView fx:id="hddImage" fitHeight="212.0" fitWidth="231.0" layoutX="25.0" layoutY="114.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../../projectImage/icon/basic.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="hddLbl" layoutX="65.0" layoutY="42.0" text="HDD Best Comment" />
+                        <TextField fx:id="hddMyTxt" layoutX="328.0" layoutY="426.0" prefHeight="63.0" prefWidth="518.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tabSsd" text="SSD">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane layoutX="278.0" layoutY="76.0" prefHeight="316.0" prefWidth="647.0">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="458.0" prefWidth="620.0">
+                                 <children>
+                                    <TextArea fx:id="ssdTxt1" layoutX="101.0" layoutY="14.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="ssdTxt2" layoutX="101.0" layoutY="100.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="ssdTxt3" layoutX="101.0" layoutY="186.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="ssdTxt4" layoutX="101.0" layoutY="270.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextArea fx:id="ssdTxt5" layoutX="101.0" layoutY="353.0" prefHeight="75.0" prefWidth="524.0" />
+                                    <TextField fx:id="ssdId1" layoutX="6.0" layoutY="17.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="ssdId2" layoutX="6.0" layoutY="103.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="ssdId3" layoutX="6.0" layoutY="192.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="ssdId4" layoutX="6.0" layoutY="273.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <TextField fx:id="ssdId5" layoutX="6.0" layoutY="350.0" prefHeight="29.0" prefWidth="90.0" />
+                                    <RadioButton fx:id="ssdRdo1" layoutX="22.0" layoutY="52.0" mnemonicParsing="false" text="삭제" />
+                                    <RadioButton fx:id="ssdRdo2" layoutX="23.0" layoutY="139.0" mnemonicParsing="false" text="삭제" />
+                                    <RadioButton fx:id="ssdRdo3" layoutX="22.0" layoutY="229.0" mnemonicParsing="false" text="삭제" />
+                                    <RadioButton fx:id="ssdRdo4" layoutX="23.0" layoutY="309.0" mnemonicParsing="false" text="삭제" />
+                                    <RadioButton fx:id="ssdRdo5" layoutX="22.0" layoutY="389.0" mnemonicParsing="false" text="삭제" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ComboBox fx:id="ssdComboBox" layoutX="80.0" layoutY="342.0" prefHeight="29.0" prefWidth="176.0" promptText="선택하세요" />
+                        <Button fx:id="ssdDelete" layoutX="815.0" layoutY="504.0" mnemonicParsing="false" text="삭제" />
+                        <Button fx:id="ssdExit" layoutX="870.0" layoutY="504.0" mnemonicParsing="false" text="나가기" />
+                        <Button fx:id="ssdSelect" layoutX="860.0" layoutY="427.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="71.0" text="등록" />
+                        <TextField fx:id="ssdMyId" layoutX="221.0" layoutY="444.0" prefHeight="29.0" prefWidth="95.0" />
+                        <ImageView fx:id="ssdImage" fitHeight="212.0" fitWidth="231.0" layoutX="25.0" layoutY="114.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../../projectImage/icon/basic.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="ssdLbl" layoutX="65.0" layoutY="42.0" text="SDD Best Comment" />
+                        <TextField fx:id="ssdMyTxt" layoutX="328.0" layoutY="426.0" prefHeight="63.0" prefWidth="518.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TabPane>
+   </children>
+</AnchorPane>

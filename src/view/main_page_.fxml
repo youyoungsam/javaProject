@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane layoutX="-1.0" prefHeight="455.0" prefWidth="1251.0" style="-fx-background-color: #E8F5FF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <ImageView fitHeight="476.0" fitWidth="1269.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../projectImage/icon/main_back2.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableView" layoutX="328.0" layoutY="93.0" prefHeight="350.0" prefWidth="581.0" />
+      <Button fx:id="btnEstimate" layoutX="919.0" layoutY="323.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="100.0" text="견적 짜기" />
+      <TextField fx:id="txtSearch" layoutX="578.0" layoutY="54.0" prefHeight="29.0" prefWidth="170.0" promptText="Please ProductName" />
+      <Button fx:id="btnExit" layoutX="1192.0" layoutY="412.0" mnemonicParsing="false" text="종료" />
+      <Button fx:id="btnProfEdit" layoutX="1100.0" layoutY="333.0" mnemonicParsing="false" text="이미지 수정" />
+      <ImageView fx:id="mainImageView" fitHeight="170.0" fitWidth="170.0" layoutX="1064.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../projectImage/icon/profile4.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Button fx:id="btnReview" layoutX="919.0" layoutY="365.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="100.0" text="제품 의견" />
+      <Button fx:id="btnStuffChart" layoutX="919.0" layoutY="409.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="100.0" text="제품 차트" />
+      <Button fx:id="btnSearch" layoutX="758.0" layoutY="52.0" mnemonicParsing="false" text="검색" />
+      <ImageView fx:id="imageView" fitHeight="260.0" fitWidth="260.0" layoutX="38.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow color="#4fc1ff" height="115.85" radius="57.425" width="115.85" />
+         </effect>
+         <image>
+            <Image url="@../../../../projectImage/icon/basic.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="112.0" layoutY="401.0" text="[ Model View ]" textFill="#4fc1ff">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="#4fc1ff" height="20.0" radius="9.5" spread="0.37" width="20.0" />
+         </effect>
+      </Label>
+      <Label layoutX="38.0" layoutY="33.0" text="[ Welcome to the estimate Program. ]" textFill="#4fc1ff">
+         <effect>
+            <DropShadow color="#4fc1ff" height="20.0" radius="9.5" spread="0.37" width="20.0" />
+         </effect>
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnList" layoutX="832.0" layoutY="52.0" mnemonicParsing="false" text="리스트" />
+   </children>
+</AnchorPane>

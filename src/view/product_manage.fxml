@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="545.0" prefWidth="579.0" style="-fx-background-color: E8F5FF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProductionController">
+   <children>
+      <TableView fx:id="tableView" layoutX="32.0" layoutY="123.0" prefHeight="350.0" prefWidth="518.0" />
+      <TextField fx:id="txtSearchField" layoutX="349.0" layoutY="85.0" prefHeight="29.0" prefWidth="144.0" promptText="List Seatch" />
+      <Button fx:id="btnDelete" layoutX="199.0" layoutY="487.0" mnemonicParsing="false" text="삭제" />
+      <Button fx:id="btnEdit" layoutX="143.0" layoutY="487.0" mnemonicParsing="false" text="수정" />
+      <Button fx:id="btnNewProduction" layoutX="32.0" layoutY="487.0" mnemonicParsing="false" text="새 제품 등록" />
+      <Button fx:id="btnExit" layoutX="500.0" layoutY="487.0" mnemonicParsing="false" text="종료" />
+      <Label layoutX="40.0" layoutY="36.0" text="[ New Production register. ]" />
+      <Button fx:id="btnSearch" layoutX="497.0" layoutY="83.0" mnemonicParsing="false" text="검색" />
+      <Button fx:id="btnList" layoutX="32.0" layoutY="83.0" mnemonicParsing="false" text="리스트" />
+   </children>
+</AnchorPane>

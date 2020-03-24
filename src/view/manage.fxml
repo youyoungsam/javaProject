@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="382.0" prefWidth="574.0" style="-fx-background-color: E8F5FF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageController">
+   <children>
+      <ImageView fitHeight="449.0" fitWidth="623.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../projectImage/icon/manage_back3.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="53.0" layoutY="371.0" text="Welcome to the estimate Program." />
+      <Button fx:id="btnReviewManage" layoutX="359.0" layoutY="192.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="126.0" text="제품 의견 관리" />
+      <ImageView fitHeight="170.0" fitWidth="170.0" layoutX="144.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow />
+         </effect>
+         <image>
+            <Image url="@../../../../projectImage/icon/manage.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnMemManage" layoutX="359.0" layoutY="144.0" mnemonicParsing="false" text="회원 관리" />
+      <Button fx:id="btnExit" layoutX="359.0" layoutY="241.0" mnemonicParsing="false" text="종료" />
+      <Button fx:id="btnProductM" layoutX="359.0" layoutY="98.0" mnemonicParsing="false" text="상품 관리" />
+   </children>
+</AnchorPane>

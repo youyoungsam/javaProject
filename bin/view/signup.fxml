@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="225.0" prefWidth="500.0" style="-fx-background-color: E8F5FF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.memberController">
+   <children>
+      <Button fx:id="btnCancel" layoutX="418.0" layoutY="175.0" mnemonicParsing="false" text="취소">
+         <effect>
+            <DropShadow color="#00000085" height="20.0" offsetX="1.0" offsetY="1.0" radius="9.5" spread="0.1" width="20.0" />
+         </effect>
+         <opaqueInsets>
+            <Insets left="7.0" />
+         </opaqueInsets>
+      </Button>
+      <Button fx:id="btnFinish" layoutX="327.0" layoutY="175.0" mnemonicParsing="false" text="회원가입">
+         <effect>
+            <DropShadow color="#00000084" height="20.0" offsetX="1.0" offsetY="1.0" radius="9.5" spread="0.1" width="20.0" />
+         </effect>
+         <opaqueInsets>
+            <Insets left="7.0" />
+         </opaqueInsets>
+      </Button>
+      <PasswordField fx:id="txtPassword" layoutX="136.0" layoutY="84.0" prefHeight="29.0" prefWidth="120.0" />
+      <TextField fx:id="txtId" layoutX="136.0" layoutY="38.0" prefHeight="29.0" prefWidth="120.0" />
+      <Label layoutX="31.0" layoutY="89.0" text="PassWord   : " />
+      <Label layoutX="31.0" layoutY="43.0" text="ID              : " />
+      <Label layoutX="275.0" layoutY="88.0" text="Name  :" />
+      <TextField fx:id="txtName" layoutX="347.0" layoutY="83.0" prefHeight="29.0" prefWidth="120.0" />
+      <Label layoutX="31.0" layoutY="133.0" text="E_mail        :" />
+      <Button fx:id="btnCheck" layoutX="275.0" layoutY="38.0" mnemonicParsing="false" text="중복 확인">
+         <effect>
+            <DropShadow color="#00000084" height="20.0" offsetX="1.0" offsetY="1.0" radius="9.5" spread="0.1" width="20.0" />
+         </effect>
+         <opaqueInsets>
+            <Insets left="7.0" />
+         </opaqueInsets>
+      </Button>
+      <TextField fx:id="txtEmail" layoutX="136.0" layoutY="128.0" prefHeight="29.0" prefWidth="331.0" />
+   </children>
+</AnchorPane>

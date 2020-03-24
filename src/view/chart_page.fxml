@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="667.0" prefWidth="749.0" style="-fx-background-color: #E8F5FF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ChartController">
+   <children>
+      <PieChart fx:id="pieChart" layoutX="28.0" layoutY="64.0" prefHeight="517.0" prefWidth="688.0" />
+      <ComboBox fx:id="ComboBoxChart" layoutX="568.0" layoutY="28.0" prefWidth="150.0" promptText="케이스" />
+      <Button fx:id="btnChartExit" layoutX="653.0" layoutY="601.0" mnemonicParsing="false" text="나가기" />
+      <Label layoutX="506.0" layoutY="33.0" text="품목 : " />
+      <Label layoutX="36.0" layoutY="33.0" text="[ 2019. 10  판매량 ( % ) ]" />
+   </children>
+</AnchorPane>

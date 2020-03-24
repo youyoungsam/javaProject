@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="715.0" prefWidth="1076.0" style="-fx-background-color: E8F5FF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane layoutX="31.0" layoutY="24.0" prefHeight="666.0" prefWidth="745.0">
+         <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1000.0" prefWidth="745.0">
+               <children>
+                  <ImageView id="infoImageView3" fitHeight="1000.0" fitWidth="1000.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <Button id="btnExit" layoutX="978.0" layoutY="661.0" mnemonicParsing="false" text="나가기" />
+      <Label layoutX="879.0" layoutY="50.0" text="[ 상세 정보 ]">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView id="infoImageView1" fitHeight="184.0" fitWidth="200.0" layoutX="830.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow color="#4fc1ff" height="115.0" radius="57.0" width="115.0" />
+         </effect>
+      </ImageView>
+      <ImageView id="infoImageView2" fitHeight="184.0" fitWidth="200.0" layoutX="830.0" layoutY="342.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow color="#4fc1ff" height="115.0" radius="57.0" width="115.0" />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

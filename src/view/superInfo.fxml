@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="236.0" prefWidth="500.0" style="-fx-background-color: #E8F5FF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="29.0" layoutY="145.0" text="E-Mail        :" />
+      <TextField fx:id="superInfoEmail" layoutX="133.0" layoutY="140.0" prefHeight="29.0" prefWidth="310.0" />
+      <Label layoutX="285.0" layoutY="94.0" text="Name       :" />
+      <TextField fx:id="superInfoName" layoutX="377.0" layoutY="91.0" prefHeight="29.0" prefWidth="101.0" />
+      <PasswordField fx:id="superInfoPass" layoutX="133.0" layoutY="91.0" prefHeight="29.0" prefWidth="127.0" />
+      <TextField fx:id="superInfoID" layoutX="133.0" layoutY="44.0" prefHeight="29.0" prefWidth="127.0" />
+      <Label layoutX="28.0" layoutY="96.0" text="PassWord   : " />
+      <Label layoutX="28.0" layoutY="49.0" text="ID              : " />
+      <Button fx:id="superInfoBtnDelete" layoutX="361.0" layoutY="188.0" mnemonicParsing="false" text="삭제">
+         <opaqueInsets>
+            <Insets left="7.0" />
+         </opaqueInsets>
+      </Button>
+      <Button fx:id="superInfoBtnCancel" layoutX="418.0" layoutY="188.0" mnemonicParsing="false" text="취소">
+         <opaqueInsets>
+            <Insets left="7.0" />
+         </opaqueInsets>
+      </Button>
+      <Button fx:id="superInfoBtnModi" layoutX="303.0" layoutY="188.0" mnemonicParsing="false" text="수정">
+         <opaqueInsets>
+            <Insets left="7.0" />
+         </opaqueInsets>
+      </Button>
+   </children>
+</AnchorPane>
